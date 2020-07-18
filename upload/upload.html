@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portal de matérias</title>
+</head>
+<body>
+
+    <header>
+        <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" onclick="menudrop()">
+    </header>
+    <div id="menudrop" style="visibility: hidden;">
+<div id="boxmenu">
+    <a href="../index.html"><div id="box">Inicio</div></a>
+    <a href="../discipline.html"><div id="box">Matérias</div></a>
+    <div id="box">Sobre</div>
+</div></div>
+<script src="../js/menu.js"></script>
+
+    <div id="inset">
+    <h1>Adicione seu Artigo</h1>
+    <h3>Categoria:</h3>
+    <select id="categoria">
+        <option value="">Selecione a Área:</option>
+        <option value="Sociologia">Ciências Sociais</option>
+        <option value="human_science">Ciências Humanas</option>
+        <option value="exact_science">Ciências Exatas</option>
+        <option value="technology">Tecnologia</option>
+        <option value="industry">Indústria</option>
+        <option value="commerce">Comércio</option>
+
+    </select>
+    <h2>Título:</h2>
+    <input type="text" id="title">
+    <h3>Imagem link:</h3>
+    <h3>Ex: https://www.imagens.com/imagembemlegal.png/ </h3>
+    <input type="text" id="image">
+    <h3>Link Documento PDF:</h3>
+    <h3>Ex: https://www.documentosonline.com/trabalhodescola.pdf/</h3>
+    <input type="text" id="pdffile">
+    <h2>Descrição:</h2>
+    <textarea id="desc" cols="30" rows="20" ></textarea>
+        <br>
+    <button onclick="addTask()">Enviar</button>
+    <br><br>
+</div>
+<br>
+<footer>Todos os Direitos Reservados 2020 ™</footer>
+
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

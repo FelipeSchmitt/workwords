@@ -1,0 +1,38 @@
+#content{
+    margin: auto;
+    width: 50%;
+    background-color: whitesmoke;
+
+}
+img{
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial;
+}
+p{
+    margin: auto;
+    font-size: 18px;
+    font-family: Helvetica;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 45em){
+    #content{
+        width: 95%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+
+}
